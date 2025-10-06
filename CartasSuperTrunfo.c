@@ -107,7 +107,6 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
     printf("PIB per Capita: %.2f reais\n", pibpercapita1);
 
-
     // Exibição Carta 2:
     printf("\nCarta2:\n");
     printf("Estado: %c\n", estado2);
