@@ -35,7 +35,7 @@ int main() {
     float superpoder2;
 
     // Variável das comparações
-    float resultadopopu, resultadoarea, resultadopib, resultadoponto, resultadodensi, resultadopibpercapita, resultadosuper;
+    int resultadopopu, resultadoarea, resultadopib, resultadoponto, resultadodensi, resultadopibpercapita, resultadosuper;
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
@@ -59,7 +59,7 @@ int main() {
     scanf("%d", &ponto1);
 
     // Cadastro Carta 2:
-    printf("Carta2:\n");
+    printf("\nCarta2:\n");
     printf("Digite o Estado (A-H): ");
     scanf(" %c", &estado2);
     printf("Digite o Código da Carta (01-04): ");
@@ -125,21 +125,21 @@ int main() {
     resultadoarea = area1 > area2;
     resultadopib = pib1 > pib2;
     resultadoponto = ponto1 > ponto2;
-    resultadodensi = densidadeinver1 > densidadeinver2;
+    resultadodensi = densidade1 < densidade2;
     resultadopibpercapita = pibpercapita1 > pibpercapita2;
     resultadosuper = superpoder1 > superpoder2;
 
 
     // Exibição da Comparação
-    printf("\n Comparação das Cartas\n");
+    printf("\nComparação das Cartas\n");
     printf("Na comparação: 1 = Carta1 venceu e 0 = Carta2 venceu\n");
-    printf("População: %.1f\n", resultadopopu);
-    printf("Área: %.1f\n", resultadoarea);
-    printf("PIB: %.1f\n", resultadopib);
-    printf("Pontos Turístico: %.1f\n", resultadoponto);
-    printf("Densidade Populacional: %.1f\n", resultadodensi);
-    printf("PIB per capita: %.1f\n", resultadopibpercapita);
-    printf("Super Poder: %.1f\n", resultadosuper);
+    printf("População: %d\n", resultadopopu);
+    printf("Área: %d\n", resultadoarea);
+    printf("PIB: %d\n", resultadopib);
+    printf("Pontos Turístico: %d\n", resultadoponto);
+    printf("Densidade Populacional: %d\n", resultadodensi);
+    printf("PIB per capita: %d\n", resultadopibpercapita);
+    printf("Super Poder: %d\n", resultadosuper);
 
     return 0;
 }
